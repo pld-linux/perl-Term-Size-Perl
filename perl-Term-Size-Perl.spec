@@ -9,7 +9,7 @@ Summary:	Term::Size::Perl - Perl extension for retrieving terminal size (Perl ve
 #Summary(pl.UTF-8):
 Name:		perl-Term-Size-Perl
 Version:	0.029
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -51,6 +51,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Term
+%dir %{perl_vendorlib}/Term/Size
 %{perl_vendorlib}/Term/Size/*.pm
 %{perl_vendorlib}/Term/Size/Perl
 %{_mandir}/man3/*
